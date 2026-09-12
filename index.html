@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Cypher | تجربة مستقبلية</title>
+    <title>Cypher X | تجربة مستقبلية</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -108,38 +108,70 @@
             background: linear-gradient(135deg, #FFD700 0%, #B8860B 100%);
             color: black;
             font-weight: 900;
-            border-radius: 20px;
-            padding: 18px;
+            border-radius: 22px;
+            padding: 16px 20px;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
-            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
             width: 100%;
             border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         .btn-download:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.4);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
         }
         .btn-ios {
-            background: rgba(255, 255, 255, 0.03);
-            color: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.02);
+            color: rgba(255, 255, 255, 0.15);
             font-weight: 700;
             border-radius: 20px;
-            padding: 18px;
+            padding: 14px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            cursor: not-allowed;
+            filter: grayscale(1);
+        }
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+            font-weight: 700;
+            border-radius: 22px;
+            padding: 16px 20px;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
             width: 100%;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            cursor: not-allowed;
-            position: relative;
-            filter: grayscale(1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .btn-icon-square {
+            width: 120px !important;
+            height: 120px !important;
+            aspect-ratio: 1/1;
+            border-radius: 35px !important;
+            padding: 0 !important;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            border-color: rgba(255, 255, 255, 0.2);
         }
         .coming-soon-text {
             font-size: 9px;
@@ -288,15 +320,15 @@
     <div id="entryOverlay" class="fixed inset-0 z-[200] bg-[#050508] flex items-center justify-center p-6 text-center transition-opacity duration-700">
         <div class="max-w-md w-full bg-white/5 border border-white/10 p-8 rounded-[40px] backdrop-blur-xl shadow-2xl">
             <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center overflow-hidden">
-                 <img src="media/iconweb.png" alt="Cypher Logo" class="w-full h-full object-contain scale-125">
+                 <img src="media/iconweb.png" alt="Cypher X Logo" class="w-full h-full object-contain scale-125">
             </div>
 
-            <h2 class="text-2xl font-black gold-gradient-text mb-2 tracking-tighter">Cypher</h2>
+            <h2 class="text-2xl font-black gold-gradient-text mb-2 tracking-tighter">Cypher X</h2>
             <p class="text-gray-400 text-[10px] mb-8 tracking-widest uppercase font-bold">برمجة وتطوير العراب (ar_c56)</p>
 
             <div class="text-right space-y-4 mb-10">
                 <p class="text-sm text-gray-300 leading-relaxed font-medium">
-                    مرحباً بك في Cypher. يرجى قراءة محتوى الموقع بالكامل للتعرف على سياسة الأمان والخصوصية، ونؤكد بشكل خاص على ضرورة قراءة <span class="text-red-500 font-bold">"الملاحظة الهامة"</span> الموجودة بالأسفل المتعلقة بتثبيت التطبيق.
+                    مرحباً بك في Cypher X. يرجى قراءة محتوى الموقع بالكامل للتعرف على سياسة الأمان والخصوصية، ونؤكد بشكل خاص على ضرورة قراءة <span class="text-red-500 font-bold">"الملاحظة الهامة"</span> الموجودة بالأسفل المتعلقة بتثبيت التطبيق.
                 </p>
 
                 <label class="flex items-center gap-3 cursor-pointer group p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-gold/30 transition-all">
@@ -327,10 +359,10 @@
                 <div class="rotating-ring ring-2"></div>
                 <!-- الشعار الأساسي -->
                 <div class="w-16 h-16 rounded-full overflow-hidden border border-white/10 shadow-[0_0_25px_rgba(255,255,255,0.15)] bg-black/60 flex items-center justify-center relative z-10">
-                    <img src="media/iconweb.png" alt="Cypher Icon" class="w-full h-full object-contain scale-125">
+                    <img src="media/iconweb.png" alt="Cypher X Icon" class="w-full h-full object-contain scale-125">
                 </div>
             </div>
-            <h1 class="text-3xl font-black metallic-text">Cypher</h1>
+            <h1 class="text-3xl font-black metallic-text">Cypher X</h1>
         </header>
 
         <!-- Main Content -->
@@ -365,7 +397,7 @@
                         وصف التطبيق
                     </h3>
                     <p class="text-gray-300 text-sm leading-loose font-medium">
-                        تطبيق <span class="text-white font-bold">Cypher</span> هو تطبيق من تطوير <span class="text-white">العراب</span> (ar_c56). يحتوي التطبيق على مكتبات ضخمة جداً وأقسام كثيرة من قرآن وقراء ومشغلات حديثة وموسيقى وبودكاست، وهو مدعوم بذكاء اصطناعي مساعد يعمل بدون إنترنت (Offline) داخل التطبيق، بالإضافة إلى قنوات إخبارية وبثوث مباشرة. يمكنك أيضاً إلقاء نظرة على بعض الصور التوضيحية لواجهة التطبيق بالأسفل.
+                        تطبيق <span class="text-white font-bold">Cypher X</span> هو تطبيق من تطوير <span class="text-white">العراب</span> (ar_c56). يحتوي التطبيق على مكتبات ضخمة جداً وأقسام كثيرة من قرآن وقراء ومشغلات حديثة وموسيقى وبودكاست، وهو مدعوم بذكاء اصطناعي مساعد يعمل بدون إنترنت (Offline) داخل التطبيق، بالإضافة إلى قنوات إخبارية وبثوث مباشرة. يمكنك أيضاً إلقاء نظرة على بعض الصور التوضيحية لواجهة التطبيق بالأسفل.
                     </p>
                 </div>
 
@@ -393,37 +425,45 @@
             </div>
 
             <!-- Download Section -->
-            <div class="w-full flex flex-col items-center gap-4 mb-16">
-                <div class="w-20 h-20 rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.5)] border border-white/10 bg-black/50 mb-2">
-                    <img src="media/iconweb.png" alt="App Icon" class="w-full h-full object-contain scale-125">
+            <div class="w-full flex flex-col items-center mb-20 px-4">
+                <div class="w-20 h-20 rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.6)] border border-white/10 bg-black/50 mb-8 p-1">
+                    <img src="media/iconweb.png" alt="App Icon" class="w-full h-full object-contain scale-110">
                 </div>
 
-                <!-- Android Button -->
-                <a href="https://www.mediafire.com/file/o3wahgi2auqgpd8/Cypher.apk/file" class="btn-download text-lg active:scale-95">
-                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M17.5 12c.83 0 1.5-.67 1.5-1.5S18.33 9 17.5 9 16 9.67 16 10.5s.67 1.5 1.5 1.5zm-11 0c.83 0 1.5-.67 1.5-1.5S7.33 9 6.5 9 5 9.67 5 10.5s.67 1.5 1.5 1.5zm11.23-4.22l1.64-2.83a.502.502 0 00-.18-.69.502.502 0 00-.69.18l-1.66 2.87c-1.37-.59-2.89-.91-4.49-.91-1.6 0-3.12.32-4.49.91L5.85 4.44a.502.502 0 00-.69-.18.502.502 0 00-.18.69l1.64 2.83C4.09 9.38 2.37 12 2.11 15h19.78c-.26-3-1.98-5.62-4.51-7.22z"></path>
-                    </svg>
-                    تحميل للأندرويد (APK)
-                </a>
+                <div class="w-full max-w-[340px] space-y-4">
+                    <!-- Main Android Action -->
+                    <div class="space-y-3">
+                        <h4 class="text-white/30 text-[9px] font-bold tracking-[0.2em] uppercase text-center mb-2">تحميل مباشر</h4>
+                    <div class="flex justify-center gap-8 py-4">
+                        <a href="https://www.mediafire.com/file/o3wahgi2auqgpd8/Cypher.apk/file" class="btn-download btn-icon-square active:scale-95" title="تحميل من MediaFire">
+                            <img src="media/mf_logo_.svg" alt="MediaFire" class="w-16 h-16 object-contain">
+                        </a>
 
-                <!-- iPhone Button (Soon) -->
-                <!-- هنا تضع رابط تحميل الآيفون مستقبلاً وتغير div إلى a -->
-                <!-- (احذف هذا السطر وضع الرابط هنا عند توفره) -->
-                <div class="btn-ios text-lg">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"></path>
-                    </svg>
-                    نسخة الـ iOS
-                    <span class="coming-soon-text">قريباً</span>
-                </div>
+                        <a href="https://apkpure.com/ar/cypher/com.example.cypher" class="btn-secondary btn-icon-square active:scale-95" title="تحميل من APKPure">
+                            <img src="media/apkpure.png" alt="APKPure" class="w-16 h-16 object-contain opacity-90 brightness-0 invert">
+                        </a>
+                    </div>
+                    </div>
 
-                <!-- Computer Button (Soon) -->
-                <div class="btn-ios text-lg">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20,18c1.1,0,2-0.9,2-2V6c0-1.1-0.9-2-2-2H4C2.9,4,2,4.9,2,6v10c0,1.1,0.9,2,2,2H0v2h24v-2H20z M4,6h16v10H4V6z"></path>
-                    </svg>
-                    نسخة الكمبيوتر
-                    <span class="coming-soon-text">قريباً</span>
+                    <!-- Other Platforms -->
+                    <div class="pt-6">
+                        <h4 class="text-white/30 text-[9px] font-bold tracking-[0.2em] uppercase text-center mb-4">منصات أخرى</h4>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="btn-ios opacity-60">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"></path>
+                                </svg>
+                                <span class="text-[10px] mt-1">نسخة iOS</span>
+                            </div>
+
+                            <div class="btn-ios opacity-60">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20,18c1.1,0,2-0.9,2-2V6c0-1.1-0.9-2-2-2H4C2.9,4,2,4.9,2,6v10c0,1.1,0.9,2,2,2H0v2h24v-2H20z M4,6h16v10H4V6z"></path>
+                                </svg>
+                                <span class="text-[10px] mt-1">الكمبيوتر</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -516,7 +556,7 @@
 
         <!-- Footer -->
         <footer class="py-10 text-center border-t border-white/5">
-            <p class="text-[10px] text-gray-600 tracking-widest uppercase">Cypher &copy; 2026</p>
+            <p class="text-[10px] text-gray-600 tracking-widest uppercase">Cypher X &copy; 2026</p>
         </footer>
 
     </div>
