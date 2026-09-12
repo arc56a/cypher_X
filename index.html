@@ -352,17 +352,41 @@
     <div class="mobile-container flex flex-col px-6">
 
         <!-- Header -->
-        <header class="py-10 flex items-center gap-6">
-            <div class="logo-wrapper">
-                <!-- الروابط الدوارة -->
-                <div class="rotating-ring ring-1"></div>
-                <div class="rotating-ring ring-2"></div>
-                <!-- الشعار الأساسي -->
-                <div class="w-16 h-16 rounded-full overflow-hidden border border-white/10 shadow-[0_0_25px_rgba(255,255,255,0.15)] bg-black/60 flex items-center justify-center relative z-10">
-                    <img src="media/iconweb.png" alt="Cypher X Icon" class="w-full h-full object-contain scale-125">
+        <header class="py-10 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="logo-wrapper">
+                    <!-- الروابط الدوارة -->
+                    <div class="rotating-ring ring-1"></div>
+                    <div class="rotating-ring ring-2"></div>
+                    <!-- الشعار الأساسي -->
+                    <div class="w-14 h-14 rounded-full overflow-hidden border border-white/10 shadow-[0_0_25px_rgba(255,255,255,0.15)] bg-black/60 flex items-center justify-center relative z-10">
+                        <img src="media/iconweb.png" alt="Cypher X Icon" class="w-full h-full object-contain scale-125">
+                    </div>
                 </div>
+                <h1 class="text-2xl font-black metallic-text">Cypher X</h1>
             </div>
-            <h1 class="text-3xl font-black metallic-text">Cypher X</h1>
+
+            <!-- Social Media Links -->
+            <div class="flex items-center gap-2">
+                <!-- Telegram -->
+                <a href="https://t.me/cinem3_x" target="_blank" class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-sky-500/20 hover:border-sky-500/50 transition-all group" title="Telegram">
+                    <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2s-.21-.05-.3-.03c-.11.02-1.93 1.23-5.46 3.62-.51.35-.98.53-1.4.51-.46-.01-1.35-.26-2.01-.48-.81-.27-1.45-.42-1.39-.88.03-.24.37-.48 1.01-.73 3.94-1.71 6.57-2.83 7.89-3.37 3.76-1.53 4.54-1.8 5.05-1.81.11 0 .36.03.52.17.13.11.17.27.18.38 0 .08-.01.24-.02.32z"/>
+                    </svg>
+                </a>
+                <!-- Instagram -->
+                <a href="#" target="_blank" class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-pink-500/20 hover:border-pink-500/50 transition-all group" title="Instagram">
+                    <svg class="w-5 h-5 text-gray-400 group-hover:text-pink-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7 2h10c2.76 0 5 2.24 5 5v10c0 2.76-2.24 5-5 5H7c-2.76 0-5-2.24-5-5V7c0-2.76 2.24-5 5-5zm10 2H7c-1.66 0-3 1.34-3 3v10c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3V7c0-1.66-1.34-3-3-3zM12 7c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5zm0 2c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm4.5-1c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/>
+                    </svg>
+                </a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/share/17Sp2Qy9CE/" target="_blank" class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-600/20 hover:border-blue-600/50 transition-all group" title="Facebook">
+                    <svg class="w-5 h-5 text-gray-400 group-hover:text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+                    </svg>
+                </a>
+            </div>
         </header>
 
         <!-- Main Content -->
